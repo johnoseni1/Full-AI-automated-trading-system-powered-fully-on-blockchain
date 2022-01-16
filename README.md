@@ -42,7 +42,7 @@ Exchanges confirmed working by the community:
 
 We invite you to read the bot documentation to ensure you understand how the bot is working.
 
-Please find the complete documentation on the [Bot-trader website](https://www.freqtrade.io).
+<!-- Please find the complete documentation on the [Bot-trader website](https://www.freqtrade.io).   -->
 
 ## Features
 
@@ -69,7 +69,7 @@ cd Bot-trader
 ./setup.sh --install
 ```
 
-For any other type of installation please refer to [Installation doc](https://www.freqtrade.io/en/stable/installation/).
+<!-- For any other type of installation please refer to [Installation doc](https://www.freqtrade.io/en/stable/installation/). -->
 
 ## Basic Usage
 
@@ -119,7 +119,7 @@ optional arguments:
 
 ### Telegram RPC commands
 
-Telegram is not mandatory. However, this is a great way to control your bot. More details and the full command list on the [documentation](https://www.freqtrade.io/en/latest/telegram-usage/)
+Telegram is not mandatory. However, this is a great way to control your bot. More details and the full command list on the 
 
 - `/start`: Starts the trader.
 - `/stop`: Stops the trader.
