@@ -1,5 +1,5 @@
 {
-    "name": "freqtrade Develop",
+    "name": "Bot-trader Develop",
     "build": {
         "dockerfile": "Dockerfile",
         "context": ".."
@@ -9,14 +9,14 @@
         8080
     ],
     "mounts": [
-        "source=freqtrade-bashhistory,target=/home/ftuser/commandhistory,type=volume"
+        "source=Bot-trader-bashhistory,target=/home/ftuser/commandhistory,type=volume"
     ],
     // Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
     "remoteUser": "ftuser",
 
-    "postCreateCommand": "freqtrade create-userdir --userdir user_data/",
+    "postCreateCommand": "Bot-trader create-userdir --userdir user_data/",
 
-    "workspaceFolder": "/freqtrade/",
+    "workspaceFolder": "/Bot-trader/",
 
     "settings": {
         "terminal.integrated.shell.linux": "/bin/bash",

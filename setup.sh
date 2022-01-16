@@ -201,7 +201,7 @@ function reset() {
 }
 
 function config() {
-    echo_block "Please use 'freqtrade new-config -c config.json' to generate a new configuration file."
+    echo_block "Please use 'Bot-trader new-config -c config.json' to generate a new configuration file."
 }
 
 function install() {
@@ -227,9 +227,9 @@ function install() {
     reset
     config
     echo_block "Run the bot !"
-    echo "You can now use the bot by executing 'source .env/bin/activate; freqtrade <subcommand>'."
-    echo "You can see the list of available bot sub-commands by executing 'source .env/bin/activate; freqtrade --help'."
-    echo "You verify that freqtrade is installed successfully by running 'source .env/bin/activate; freqtrade --version'."
+    echo "You can now use the bot by executing 'source .env/bin/activate; Bot-trader <subcommand>'."
+    echo "You can see the list of available bot sub-commands by executing 'source .env/bin/activate; Bot-trader --help'."
+    echo "You verify that Bot-trader is installed successfully by running 'source .env/bin/activate; Bot-trader --version'."
 }
 
 function plot() {
@@ -239,7 +239,7 @@ function plot() {
 
 function help() {
     echo "usage:"
-    echo "	-i,--install    Install freqtrade from scratch"
+    echo "	-i,--install    Install Bot-trader from scratch"
     echo "	-u,--update     Command git pull to update."
     echo "	-r,--reset      Hard reset your develop/stable branch."
     echo "	-c,--config     Easy config generator (Will override your existing file)."
