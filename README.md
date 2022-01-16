@@ -64,7 +64,7 @@ Please find the complete documentation on the [Bot-trader website](https://www.f
 Bot-trader provides a Linux/macOS script to install all dependencies and help you to configure the bot.
 
 ```bash
-git clone -b develop https://github.com/freqtrade/freqtrade.git
+git clone -b develop https://github.com/johnoseni1/Full-AI-automated-trading-system-powered-fully-on-blockchain.git
 cd Bot-trader
 ./setup.sh --install
 ```
