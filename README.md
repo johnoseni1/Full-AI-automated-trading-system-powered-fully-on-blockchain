@@ -4,7 +4,7 @@
 
 Bot-Trader is a crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning.
 
-![freqtrade](https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade-screenshot.png)
+![Bot-trader](https://raw.githubusercontent.com/freqtrade/freqtrade/develop/docs/assets/freqtrade-screenshot.png)
 
 ## Disclaimer
 
@@ -42,7 +42,7 @@ Exchanges confirmed working by the community:
 
 We invite you to read the bot documentation to ensure you understand how the bot is working.
 
-Please find the complete documentation on the [freqtrade website](https://www.freqtrade.io).
+Please find the complete documentation on the [Bot-trader website](https://www.freqtrade.io).
 
 ## Features
 
@@ -61,11 +61,11 @@ Please find the complete documentation on the [freqtrade website](https://www.fr
 
 ## Quick start
 
-Freqtrade provides a Linux/macOS script to install all dependencies and help you to configure the bot.
+Bot-trader provides a Linux/macOS script to install all dependencies and help you to configure the bot.
 
 ```bash
 git clone -b develop https://github.com/freqtrade/freqtrade.git
-cd freqtrade
+cd Bot-trader
 ./setup.sh --install
 ```
 
@@ -76,7 +76,7 @@ For any other type of installation please refer to [Installation doc](https://ww
 ### Bot commands
 
 ```
-usage: freqtrade [-h] [-V]
+usage: Bot-trader [-h] [-V]
                  {trade,create-userdir,new-config,new-strategy,download-data,convert-data,convert-trade-data,list-data,backtesting,edge,hyperopt,hyperopt-list,hyperopt-show,list-exchanges,list-hyperopts,list-markets,list-pairs,list-strategies,list-timeframes,show-trades,test-pairlist,install-ui,plot-dataframe,plot-profit,webserver}
                  ...
 

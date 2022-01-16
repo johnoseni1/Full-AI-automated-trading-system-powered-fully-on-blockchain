@@ -8,7 +8,7 @@ nav:
     - Installation:
         - Linux/MacOS/Raspberry: installation.md
         - Windows: windows_installation.md
-    - Freqtrade Basics: bot-basics.md
+    - Bot-trader Basics: bot-basics.md
     - Configuration: configuration.md
     - Strategy Customization: strategy-customization.md
     - Strategy Callbacks: strategy-callbacks.md
@@ -36,7 +36,7 @@ nav:
         - Sandbox Testing: sandbox-testing.md
     - FAQ: faq.md
     - SQL Cheat-sheet: sql_cheatsheet.md
-    - Updating Freqtrade: updating.md
+    - Updating Bot-trader: updating.md
     - Deprecated Features: deprecated.md
     - Contributors Guide: developer.md
 theme:
