@@ -9,16 +9,16 @@ ENV PATH=/home/ftuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
 
 # Prepare environment
-RUN mkdir /freqtrade \
+RUN mkdir /Bot-trader \
   && apt-get update \
   && apt-get -y install sudo libatlas3-base curl sqlite3 libhdf5-serial-dev  \
   && apt-get clean \
   && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
-  && chown ftuser:ftuser /freqtrade \
+  && chown ftuser:ftuser /Bot-trader \
   # Allow sudoers
   && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
 
-WORKDIR /freqtrade
+WORKDIR /Bot-trader
 
 # Install dependencies
 FROM base as python-deps
@@ -33,7 +33,7 @@ RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*ta-lib*
 ENV LD_LIBRARY_PATH /usr/local/lib
 
 # Install dependencies
-COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
+COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /Bot-trader/
 USER ftuser
 RUN  pip install --user --no-cache-dir numpy \
   && pip install --user --no-cache-dir -r requirements-hyperopt.txt
@@ -47,12 +47,12 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 
 USER ftuser
 # Install and execute
-COPY --chown=ftuser:ftuser . /freqtrade/
+COPY --chown=ftuser:ftuser . /Bot-trader/
 
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
-  && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui
+  && mkdir /Bot-trader/user_data/ \
+  && Bot-trader install-ui
 
-ENTRYPOINT ["freqtrade"]
+ENTRYPOINT ["Bot-trader"]
 # Default to trade mode
 CMD [ "trade" ]

@@ -1,11 +1,11 @@
 ---
 version: '3'
 services:
-  freqtrade:
+  Bot-trader:
     image: freqtradeorg/freqtrade:stable
-    # image: freqtradeorg/freqtrade:develop
+    # image: Bot-traderorg/Bot-trader:develop
     # Use plotting image
-    # image: freqtradeorg/freqtrade:develop_plot
+    # image: Bot-traderorg/Bot-trader:develop_plot
     # Build step - only needed when additional dependencies are needed
     # build:
     #   context: .
@@ -13,16 +13,16 @@ services:
     restart: unless-stopped
     container_name: freqtrade
     volumes:
-      - "./user_data:/freqtrade/user_data"
+      - "./user_data:/Bot-trader/user_data"
     # Expose api on port 8080 (localhost only)
-    # Please read the https://www.freqtrade.io/en/stable/rest-api/ documentation
+    # Please read the https://www.Bot-trader.io/en/stable/rest-api/ documentation
     # before enabling this.
     ports:
       - "127.0.0.1:8080:8080"
     # Default command used when running `docker compose up`
     command: >
       trade
-      --logfile /freqtrade/user_data/logs/freqtrade.log
-      --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
-      --config /freqtrade/user_data/config.json
+      --logfile /Bot-trader/user_data/logs/Bot-trader.log
+      --db-url sqlite:////Bot-trader/user_data/tradesv3.sqlite
+      --config /Bot-trader/user_data/config.json
       --strategy SampleStrategy
