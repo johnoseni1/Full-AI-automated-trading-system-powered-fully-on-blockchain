@@ -1,0 +1,3 @@
+[pytest11]
+time_machine = time_machine
+

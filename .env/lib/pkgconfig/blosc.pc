@@ -1,0 +1,14 @@
+prefix=/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/pip-req-build-2gv6koh1/_skbuild/macosx-10.9-x86_64-3.9/cmake-install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: blosc
+Description: A blocking, shuffling and lossless compression library
+URL: http://blosc.org/
+Version: 1.21.1
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lblosc
+Cflags: -I${includedir}

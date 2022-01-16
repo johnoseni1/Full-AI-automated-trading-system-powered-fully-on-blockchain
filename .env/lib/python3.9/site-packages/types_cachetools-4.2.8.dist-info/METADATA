@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: types-cachetools
+Version: 4.2.8
+Summary: Typing stubs for cachetools
+Home-page: https://github.com/python/typeshed
+License: Apache-2.0 license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Typing :: Stubs Only
+Description-Content-Type: text/markdown
+
+## Typing stubs for cachetools
+
+This is a PEP 561 type stub package for the `cachetools` package.
+It can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code
+that uses `cachetools`. The source for this package can be found at
+https://github.com/python/typeshed/tree/master/stubs/cachetools. All fixes for
+types and metadata should be contributed there.
+
+See https://github.com/python/typeshed/blob/master/README.md for more details.
+This package was generated from typeshed commit `032e6ee90cbb938259a2aa2183966502de19108e`.
+
+

@@ -1,0 +1,3 @@
+[pytest11]
+random_order = random_order.plugin
+
