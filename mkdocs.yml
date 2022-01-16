@@ -1,6 +1,6 @@
-site_name: Freqtrade
+site_name: Bot-trader
 site_url: https://www.freqtrade.io/
-repo_url: https://github.com/freqtrade/freqtrade
+repo_url: https://github.com/johnoseni1/Full-AI-automated-trading-system-powered-fully-on-blockchain
 use_directory_urls: True
 nav:
     - Home: index.md

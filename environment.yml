@@ -1,4 +1,4 @@
-name: freqtrade
+name: Bot-trader
 channels:
   - conda-forge
 # - defaults

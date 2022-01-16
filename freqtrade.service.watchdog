@@ -1,12 +1,12 @@
 [Unit]
-Description=Freqtrade Daemon
+Description=Bot-trader Daemon
 After=network.target
 
 [Service]
 # Set WorkingDirectory and ExecStart to your file paths accordingly
 # NOTE: %h will be resolved to /home/<username>
-WorkingDirectory=%h/freqtrade
-ExecStart=/usr/bin/freqtrade trade --sd-notify
+WorkingDirectory=%h/Bot-trader
+ExecStart=/usr/bin/Bot-trader trade --sd-notify
 
 Restart=always
 #Restart=on-failure
