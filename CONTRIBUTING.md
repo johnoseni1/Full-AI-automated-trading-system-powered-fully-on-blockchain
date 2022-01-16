@@ -129,6 +129,6 @@ Contributors may be given commit privileges. Preference will be given to those w
 1. Access to resources for cross-platform development and testing.
 1. Time to devote to the project regularly.
 
-Being a Committer does not grant write permission on `develop` or `stable` for security reasons (Users trust Freqtrade with their Exchange API keys).
+Being a Committer does not grant write permission on `develop` or `stable` for security reasons (Users trust Bot-trader with their Exchange API keys).
 
 After being Committer for some time, a Committer may be named Core Committer and given full repository access.
